@@ -2,20 +2,21 @@
 
 
 <?php
-echo "php rocks";
-echo "<br>";
-echo "or does it?";
+$pageTitle = "PHP Loaded Page Title";
+$h =  "My first PHP project!";
+$p = "This paragraph was created using PHP and HTML!";
+
+$h_2 = "<h2> This heading was entirely created with PHP! </h2>";
 ?>
 
 <!Doctype html>
 <html>
 	<head>
-		<title><?php echo 'PHP Loaded Page Title'; ?> </title>
+		<title><?php echo $pageTitle; ?> </title>
 	</head>
 	<body>
-		<h1><?php echo "My first PHP project!";?></h1>
-		<p><?php echo "This paragraph was created using PHP and HTML!"; ?></p>
+		<h1><?php echo $h; ?></h1>
+		<p><?php echo $p; ?></p>
+		<div><?php echo $h_2?></div>
 	</body>
 </html>
-
-<?php echo "<h2> This heading was entirely created with PHP! </h2>";
