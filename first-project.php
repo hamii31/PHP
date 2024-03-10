@@ -37,5 +37,32 @@ $var = "Not null anymore";
 			var_dump($var);
 			?>
 		</div>
+
+		<div id="statements">
+			<form method="post">
+				<input type="number" name="age">
+				<input type="submit">
+			</form>
+		</div>
 	</body>
 </html>
+
+<?php 
+$age = $_POST["age"];
+
+	$res = "";
+
+	if($age == null){
+		$res = "Nothing to see here";
+	}
+
+	else if($age < 12){
+		$res =  "You are not old enough to use the Internet!";
+	}
+	else{
+		$res = "Welcome to the Internet!";
+	}
+
+	echo "Result: $res";
+
+?>
